@@ -60,14 +60,14 @@ function App() {
 
 				<button
 					onClick={() => {
-						fetch("/api/apiname")
+						fetch("/api/xxxapi")
 							.then((res) => res.json() as Promise<{ resString: string }>)
 							.then((data) => window.location.href = data.resString);
 							//.then((data) => setName(data.resString)); 
 					}}
-					aria-label="check out"
+					aria-label="xxx api"
 				>
-					Check Out
+					Test XXX API
 				</button>
 
 				
