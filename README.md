@@ -88,3 +88,26 @@ npx wrangler tail
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://reactjs.org/)
 - [Hono Documentation](https://hono.dev/)
+
+# Universal API call and test
+
+## disconnect the git repo from Cloudflare Workers -> Settings -> Build 
+
+## install dependencies in package.json
+
+## store API_KEY in Cloudflare Workers -> Settings -> Variables and Secrets
+Access it with ```c.env.API_KEY```
+
+## write the api calling function in src/index.ts
+```javascript
+const apiCaller = async function(c){}
+```
+## set a route for use apiCaller
+
+## add a button Test XXX API, onClick function: fetch that route
+
+## connect the git repo from Cloudflare Workers -> Settings -> Build
+
+## open the deployed web app
+
+## click the button Test XXX API
