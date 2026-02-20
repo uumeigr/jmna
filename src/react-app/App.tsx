@@ -54,6 +54,24 @@ function App() {
 				>
 					Name from API is: {name}
 				</button>
+
+
+				// API Caller, API Test here
+
+				<button
+					onClick={() => {
+						fetch("/api/apiname")
+							.then((res) => res.json() as Promise<{ resString: string }>)
+							.then((data) => window.location.href = data.resString);
+							//.then((data) => setName(data.resString)); 
+					}}
+					aria-label="check out"
+				>
+					Check Out
+				</button>
+
+				
+				
 				<p>
 					Edit <code>worker/index.ts</code> to change the name
 				</p>
