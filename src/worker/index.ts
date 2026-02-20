@@ -6,11 +6,14 @@ import { Context } from "hono";
 
 const xxxApiCaller = async function(c: Context) {
 
-  // ... call the xxxApi
-  // ... check if the calling is successful
-  // ... get the result of the xxxApi calling
-  const isSuccess = true;       // replace it with the real api call result in
-  const resStr = 'hahahaha';     // replace it with the real api call result
+  // if there is API_KEY set in Cloudflare Workers -> Settings -> Variables and Secrets, get it with 
+  //const apiKey = c.env.API_KEY;
+  
+  // ... call imported xxxApi
+  // ... check if the calling is successful and assign the value to following const isSuccess
+  const isSuccess = true;                         // replace it with the real api call result
+  // ... get the result of the xxxApi calling and assign the value to following const resStr
+  const resStr = 'hahahaha';                       // replace it with the real api call result
   
   if (isSuccess) {
       console.log(resStr);
