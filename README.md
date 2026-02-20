@@ -23,10 +23,10 @@ const xxxApiCaller = async function(c: Context) {
 ```
 
 ## set a route for use apiCaller
-```app.get("/api/xxxapi", (c) => xxxApiCaller(c));`
+```app.get("/api/xxxapi", (c) => xxxApiCaller(c));```
 
 ## add a button 
-name: Test XXX API,   
+name: **Test XXX API**,   
 onClick function: ```fetch("/api/xxxapi")```  
 and then show the response in ```src/react-app/App.tsx```
 
